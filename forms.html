@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Basic Form</h1>
+    </header>
+
+    <main>
+        <h3>Tell Us About Yourself</h3>
+        <form action ="/submit" method="POST">
+            <label for="email">Enter Email:</label><br>
+            <input type="email" name="email" placeholder="jess202@gmail.com" required>
+            <div role="alert" aria-live="assertive"></div>
+            <br>
+    
+            <label for = "email">On a scale from 1-10, how are you feeling?</label> <br>
+            <input type="number" id="quantity" name="quantity" placeholder="10" min="1" max="10" step="1">
+            <div role="alert" aria-live="assertive"></div>
+            <br>
+    
+            <label for="date">Select a Date:</label><br>
+            <input type="date" id="date" name="date" min="2022-01-01" max="2024-12-31">
+            <div role="alert" aria-live="assertive"></div>
+            <br>
+    
+            <label for="rating">Rating:</label><br>
+            <input type="range" id="rating" name="rating" min="1" max="100" step="10" placeholder="Rating">
+            <div role="alert" aria-live="assertive"></div>
+            <br>
+    
+            <label for="favcolor">Select your favorite color:</label><br>
+            <input type="color" id="favcolor" name="favcolor" value="#d1e5f4">
+            <div role="alert" aria-live="assertive"></div>
+            <br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+
+        <br><hr>
+        
+        <h3>Tell Us About Your Coding Experience</h3>
+        <form action ="/submit" method="POST">
+            <label for="language">Your Favorite Programming Language:</label><br>
+            <select id="language" name="language">
+                <option value="python">Python</option>
+                <option value="sql">SQL</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="cplusplus">C++</option>
+                <option value="javascript">JavaScript</option>
+            </select>
+            <div role="alert" aria-live="assertive"></div>
+            <br>
+
+            <label for="level">Programming Level:</label><br>
+            <input type="radio" name="level" value="Beginner">
+            <label for="level">Beginner</label>
+            <input type="radio" name="level" value="Intermediate">
+            <label for="level">Intermediate</label>
+            <input type="radio" name="level" value="Advanced">
+            <label for="level">Advanced</label>
+            <div role="alert" aria-live="assertive"></div>
+            <br>
+
+            <label for="platform">Preferred Development Platforms:</label><br>
+            <input type="checkbox" id="platform" name="platform" value="Web">
+            <label for="platform"> Web</label><br>
+            <input type="checkbox" id="platform" name="platform" value="Mobile">
+            <label for="platform"> Mobile</label><br>
+            <input type="checkbox" id="platform" name="platform" value="Desktop">
+            <label for="platform"> Desktop</label>
+            <div role="alert" aria-live="assertive"></div>
+            <br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </main>
+  
+    
+</body>
+</html>
